@@ -1,0 +1,50 @@
+/*
+ *
+ * User Gallery CSS
+ *
+ * @author Per Jensen
+ * @license http://www.gnu.org/licenses/gpl-2.0.html GNU General Public License v2
+ * @copyright Copyright (c) 2019, Per Jensen
+ *
+ */
+
+/* ***************************************
+	GALLERY
+*************************************** */
+.elgg-list-users {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 -.5rem;
+}
+.elgg-list-users > li {
+	flex: 1 0 21%;
+	border-bottom: none;
+}
+.elgg-list-users > li .elgg-image {
+	margin-right: 0;
+}
+.elgg-list-users > li .elgg-image-block {
+	display: flex;
+	flex-direction: column;
+}
+.elgg-list-users .elgg-listing-summary-title {
+    margin-top: .25rem;
+    margin-bottom: 0;
+}
+/* ***************************************
+	RESPONSIVE
+*****************************************/
+@media screen and (max-width: 50rem) {
+	.elgg-list-users > li {
+		flex: 1 0 33%;
+		padding: 1rem .5rem 0 .5rem !important;
+	}
+}
+@media screen and (max-width: 30rem) {
+	.elgg-list-users > li {
+		flex: 1 0 49%;
+	}
+	.elgg-list-users .elgg-listing-summary-title {
+		font-size: 100%;
+	}
+}
